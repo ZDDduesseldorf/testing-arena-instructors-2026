@@ -1,0 +1,23 @@
+name: Mutation Test Arena
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mutation-arena:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out student repository
+        uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10
+
+      - name: Run mutation arena
+        run: >-
+          uv run
+          --with "testing-arena-mutants @ git+https://github.com/ZDDduesseldorf/testing-arena-instructors-2026.git@v2026.1"
+          testing-arena

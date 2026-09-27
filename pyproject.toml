@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "testing-arena-mutants"
+version = "2026.1.0"
+description = "Mutation-test arena used in the DAISY Software Engineering course."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "ZDD Düsseldorf / HSD" }
+]
+dependencies = [
+  "pytest>=8"
+]
+
+[project.scripts]
+testing-arena = "testing_arena_mutants.runner:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/testing_arena_mutants"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
