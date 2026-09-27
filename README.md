@@ -1,3 +1,5 @@
+<a href="https://medien.hs-duesseldorf.de/studium/studiengaenge/bdaisy/" target="_blank"><img src="https://img.shields.io/badge/DAISY 2026-_Software_Engineering_for_Data_Science-teal.svg?style=flat"/></a>
+<a href="https://medien.hs-duesseldorf.de/studium/studiengaenge/bdaisy/" target="_blank"><img src="https://img.shields.io/badge/DAISY 2026-_Data_Science_AI_Infrastructures-lightblue.svg?style=flat"/></a>
 # Testing Arena – Instructor Package 2026
 
 This repository contains the mutation-test runner used for a lab course on code testing in the DAISY Software Engineering course.
